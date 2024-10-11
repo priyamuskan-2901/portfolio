@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+//import { ToastContainer, toast } from 'react-toastify';
+//import 'react-toastify/dist/ReactToastify.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
 function Contact() {
@@ -20,12 +20,12 @@ function Contact() {
     )
       .then(
         () => {
-          toast.success('Message sent successfully!');
+        //  toast.success('Message sent successfully!');
           form.current.reset(); // Reset the form after successful submission
           setIsSubmitting(false);
         },
         (error) => {
-          toast.error('Failed to send message.');
+        //  toast.error('Failed to send message.');
           console.log('FAILED...', error.text);
           setIsSubmitting(false);
         }
@@ -73,7 +73,7 @@ function Contact() {
             </form>
           </Col>
         </Row>
-        <ToastContainer />
+        {/* <ToastContainer /> */}
       </Container>
     </Container>
   );

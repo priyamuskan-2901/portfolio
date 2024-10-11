@@ -4,7 +4,6 @@ import Particle from "../Particle";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 
-
 function About() {
   return (
     <Container fluid className="about-section" id="about">
